@@ -1,0 +1,10 @@
+version: "3"
+services:
+  neuralTalk:
+    image: samnco/neuraltalk2:latest
+    container_name: neuralTalk2
+    volumes:
+      - "./data/images:/data/images"
+      - "./data/model:/data/model"
+    ports:
+      - "8000:8000"
